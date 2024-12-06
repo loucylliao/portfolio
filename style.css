@@ -1,6 +1,7 @@
 body {
     background-color: black;
     font-family: 'Fredoka One', sans-serif;
+    letter-spacing: 0.35px;
     color: white;
 }
 
@@ -8,7 +9,21 @@ body {
     margin-left: 115px;
     margin-right: 90px;
     display: flex;
-    margin-bottom: 210px;
+}
+
+.experiences{
+    padding-top: 210px;
+    margin-left: 115px;
+    margin-right: 90px;
+    display: flex;
+}
+
+.projects{
+    padding-top: 180px;
+    margin-left: 115px;
+    margin-right: 90px;
+    display: flex;
+    height: 500px;
 }
 
 .picture {
@@ -226,27 +241,45 @@ td {
 }
 
 .exp-stack{
-    font-size: 16px;
-    margin-top: 75px;
-    gap: 15px;
+    display: block;
+    margin-top: 70px;
     padding-left: 5px;
     list-style-type: none;
-    width: 80%;
+    width: 70%;
+}
+
+.exp-stack li {
+    margin-bottom: 40px;
 }
 
 .exp-link {
-    font-size: 9;
+    font-size: 16px;
     color: white;
     text-decoration: none;
-    margin-right: 30px;
     transition: color 0.3s ease;
 }
 
-.exp-link:active {
-    background-image: linear-gradient(90deg, #C58DE3, #e180ff, #ba67e7);
-    background-size: 200% 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: gradientAnimation 3s ease-in-out infinite;
+.experience-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.exp-block {
+    margin-top: 230px;
+    width: 70%;
+}
+
+.exp-title{
+    font-size: 22px;
+}
+
+.exp-date{
+    font-size: 14px;
+}
+
+.empty{
+    font-size: 20px;
+    margin-top: 70px;
+    margin-left: 50px;
+    opacity: 90%;
 }
